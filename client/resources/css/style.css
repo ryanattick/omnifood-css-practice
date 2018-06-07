@@ -99,13 +99,15 @@ h3 {
 /*BUTTONS*/
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
   text-decoration: none;
   border-radius: 200px;
   transition: all 0.2s;
+  cursor: pointer;
 }
 
 .btn:hover,
@@ -114,7 +116,8 @@ h3 {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
   color: #fff;
   background-color: #e67e22;
   border: 1px solid #e67e22;
@@ -128,12 +131,14 @@ h3 {
 }
 
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+input[type=submit] {
   border: 1px solid #cf6d17;
 }
 
 .btn-ghost:hover,
-.btn-ghost:active {
+.btn-ghost:active,
+input[type=submit] {
   border: 1px solid #cf6d17;
   color: #fff;
 }
@@ -411,4 +416,31 @@ cite img {
 
 .plan-price-meal {
   font-size: 80%;
+}
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type=checkbox] {
+  margin: 10px 5px 10px 0;
+}
+
+*:focus {
+  outline: none;
 }
